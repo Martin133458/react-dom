@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.nav a {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  overflow: hidden;
+}
+.nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  transition: 0.5s;
+}
+.nav a:hover::after, .nav a:hover::before {
+  width: 100px;
+}/*# sourceMappingURL=Header.css.map */
